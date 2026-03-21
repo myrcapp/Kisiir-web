@@ -15,7 +15,7 @@ const cards = [
   {
     emoji: "🧪",
     title: "Routine Builder",
-    desc: "Notre algorithme croise des milliers d'avis et de combos pour construire votre routine idéale. Propulsé par la data, pas le marketing.",
+    desc: "Notre moteur analyse plus de 1 200 avis et des centaines de combos pour construire votre routine idéale, étape par étape. Propulsé par votre communauté, pas le marketing.",
     span: "lg:col-span-5",
     bg: "bg-kisiir-dark",
     text: "text-white",

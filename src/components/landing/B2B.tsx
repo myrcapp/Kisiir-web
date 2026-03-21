@@ -6,7 +6,6 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
   const [count, setCount] = useState(0);
   useEffect(() => {
     if (!inView) return;
-    let start = 0;
     const startTime = performance.now();
     const step = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
@@ -20,15 +19,15 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { target: 160, suffix: "+", label: "Testeuses actives" },
-  { target: 1000, suffix: "+", label: "Produits référencés" },
+  { target: 1200, suffix: "+", label: "Avis collectés" },
+  { target: 1200, suffix: "+", label: "Produits référencés" },
   { target: 9, suffix: "", label: "Familles capillaires" },
 ];
 
 const valueCards = [
-  { emoji: "📊", title: "Data par famille capillaire", desc: "Performance de vos produits analysée par famille. Porosité, épaisseur — on segmente tout." },
+  { emoji: "📊", title: "Data par famille capillaire", desc: "Nous collectons les premiers retours produits segmentés par famille capillaire, porosité et épaisseur — un niveau de granularité inédit dans l'industrie." },
   { emoji: "🎯", title: "Retours qualifiés & authentiques", desc: "Chaque avis lié à un profil vérifié. Pas de bots — des retours réels de vraies utilisatrices." },
-  { emoji: "💡", title: "Insights développement produit", desc: "Identifiez les gaps dans votre gamme. Comprenez pourquoi un produit fonctionne sur une famille et pas une autre." },
+  { emoji: "💡", title: "Insights développement produit", desc: "Comprenez pourquoi un produit performe sur une famille et pas une autre. Identifiez les opportunités dans votre gamme grâce à des données terrain." },
 ];
 
 const roles = [
@@ -39,9 +38,27 @@ const roles = [
   "Autre",
 ];
 
+const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: number; inView: boolean }) => {
+  const count = useCountUp(stat.target, inView);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="bg-white/[0.04] rounded-[20px] p-6 text-center"
+    >
+      <p className="text-3xl sm:text-4xl font-extrabold text-kisiir-orange">
+        {stat.target >= 1000 ? count.toLocaleString("fr-FR") : count}{stat.suffix}
+      </p>
+      <p className="text-white/40 text-sm mt-1">{stat.label}</p>
+    </motion.div>
+  );
+};
+
 const B2B = () => {
   const statsRef = useRef(null);
-  const statsInView = useInView(statsRef, { once: true, amount: 0.5 });
+  const statsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   return (
     <section id="b2b" className="py-24 lg:py-32 bg-kisiir-dark relative overflow-hidden">
@@ -56,24 +73,9 @@ const B2B = () => {
       <div className="container relative z-10">
         {/* Stats */}
         <div ref={statsRef} className="grid grid-cols-3 gap-4 mb-16">
-          {stats.map((s, i) => {
-            const count = useCountUp(s.target, statsInView);
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white/[0.04] rounded-[20px] p-6 text-center"
-              >
-                <p className="text-3xl sm:text-4xl font-extrabold text-kisiir-orange">
-                  {s.target === 1000 ? count.toLocaleString("fr-FR") : count}{s.suffix}
-                </p>
-                <p className="text-white/40 text-sm mt-1">{s.label}</p>
-              </motion.div>
-            );
-          })}
+          {stats.map((s, i) => (
+            <StatCard key={i} stat={s} index={i} inView={statsInView} />
+          ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -86,8 +88,8 @@ const B2B = () => {
           >
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-kisiir-orange-light mb-4">Pour les marques</p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight">
-              Des retours produits segmentés par famille capillaire. Une{" "}
-              <span className="font-playfair text-kisiir-orange">première.</span>
+              Les premiers retours produits segmentés par profil capillaire. Rejoignez le programme{" "}
+              <span className="font-playfair text-kisiir-orange">early access.</span>
             </h2>
             <p className="text-white/50 text-lg mb-8 leading-relaxed">
               Kisiir collecte des avis produits segmentés par profil capillaire — un niveau de granularité inédit.
@@ -127,7 +129,7 @@ const B2B = () => {
           >
             <h3 className="text-xl font-bold text-white mb-2">Contactez-nous</h3>
             <p className="text-white/50 text-sm mb-6 leading-relaxed">
-              Vous représentez une marque capillaire ? Discutons de comment Kisiir peut enrichir votre connaissance client.
+              Vous représentez une marque capillaire ? Nous construisons la première base de retours produits segmentés par profil cheveu. Échangeons sur comment Kisiir peut enrichir votre connaissance client.
             </p>
 
             <form className="space-y-4" action="https://formsubmit.co/contact@kisiir.com" method="POST">

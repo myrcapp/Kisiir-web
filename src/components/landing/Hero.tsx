@@ -4,7 +4,7 @@ import screenScan from "@/assets/screen-scan.png";
 import screenCompat from "@/assets/screen-compatibility.png";
 import SplinePlaceholder from "./SplinePlaceholder";
 
-const families = ["Ondas", "Nami", "Yaba", "Rizo", "Silmus", "Kurlu", "Spiro", "Coilya", "Zarha"];
+const signatures = ["Signature Kisiir™", "Ondas", "Nami", "Yaba", "Rizo", "Silmus", "Kurlu", "Spiro", "Coilya", "Zarha"];
 
 const AppleIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -20,7 +20,7 @@ const Hero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFamilyIndex((i) => (i + 1) % families.length);
+      setFamilyIndex((i) => (i + 1) % signatures.length);
     }, 2500);
     return () => clearInterval(interval);
   }, []);
@@ -45,7 +45,7 @@ const Hero = () => {
                 <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-kisiir-teal opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-kisiir-teal" />
               </span>
-              <span className="text-sm font-medium text-kisiir-teal">Beta ouverte — 160 testeuses</span>
+              <span className="text-sm font-medium text-kisiir-teal">Beta ouverte — Gratuite sur iOS & Android</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.08] text-kisiir-dark mb-6 tracking-tight">
@@ -54,8 +54,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-kisiir-text-mid leading-relaxed mb-8 max-w-xl">
-              Kisiir analyse la compatibilité de chaque produit avec votre profil{" "}
-              <span className="relative inline-block w-[100px] h-[1.5em] align-bottom overflow-hidden">
+              Kisiir analyse la compatibilité de chaque produit avec votre{" "}
+              <span className="relative inline-block w-[160px] h-[1.5em] align-bottom overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={familyIndex}
@@ -65,7 +65,7 @@ const Hero = () => {
                     transition={{ duration: 0.35 }}
                     className="absolute left-0 font-bold text-kisiir-orange"
                   >
-                    {families[familyIndex]}
+                    {signatures[familyIndex]}
                   </motion.span>
                 </AnimatePresence>
               </span>
@@ -95,8 +95,8 @@ const Hero = () => {
             {/* Metrics */}
             <div className="flex flex-wrap gap-6 sm:gap-8 border-t border-kisiir-orange/[0.08] pt-6">
               {[
-                { num: "160", suffix: "+", label: "Testeuses actives" },
-                { num: "1 000", suffix: "+", label: "Produits référencés" },
+                { num: "1 200", suffix: "+", label: "Avis collectés" },
+                { num: "1 200", suffix: "+", label: "Produits référencés" },
                 { num: "9", suffix: "", label: "Familles capillaires" },
               ].map((s, i) => (
                 <div key={i}>

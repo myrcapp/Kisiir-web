@@ -82,13 +82,13 @@ const Families = () => (
         className="text-center mt-12"
       >
         <p className="text-kisiir-text-mid mb-6 max-w-lg mx-auto">
-          Lors de votre inscription, un quiz de 8 questions détermine votre Signature et vous place dans votre famille. Tout le reste s'adapte.
+          Quelle est votre famille ? Un quiz de 8 questions suffit pour déterminer votre Signature Kisiir™ et vous placer dans votre famille. Toute l'app s'adapte ensuite à votre réalité capillaire.
         </p>
         <a
           href="#beta"
           className="inline-flex items-center gap-1.5 border-2 border-kisiir-orange/20 text-kisiir-dark font-semibold px-6 py-3 rounded-full hover:border-kisiir-orange hover:text-kisiir-orange transition-all duration-200 active:scale-[0.97]"
         >
-          Découvrir ma famille →
+          Faire le quiz — c'est gratuit →
         </a>
       </motion.div>
     </div>

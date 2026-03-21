@@ -9,12 +9,12 @@ const features = [
   { title: "Niveaux de confiance", desc: "on vous dit quand le score est fiable" },
   { title: "Salle de bain virtuelle", desc: "produits en cours, favoris et archivés" },
   { title: "Système Kombs", desc: "contribuez, montez en niveau, devenez Légende" },
-  { title: "1 000+ produits", desc: "catalogue vérifié, enrichi par la communauté" },
+  { title: "1 200+ produits", desc: "catalogue vérifié, enrichi par la communauté" },
 ];
 
 const compatFeatures = [
   { title: "Score personnalisé", desc: "chaque produit noté selon votre famille capillaire" },
-  { title: "Détail des ingrédients", desc: "analyse complète adaptée à votre texture" },
+  { title: "Historique complet", desc: "retrouvez tous vos scans, vos avis et suivez l'évolution de votre routine" },
   { title: "Avis filtrés", desc: "uniquement les retours de votre famille" },
 ];
 
@@ -70,6 +70,9 @@ const AppDetail = () => {
             Conçue par et pour la communauté{" "}
             <span className="font-playfair text-kisiir-orange">curly</span>
           </h2>
+          <p className="text-kisiir-text-mid text-lg mb-3 leading-relaxed">
+            Scores basés sur plus de 1 200 avis réels — collectés auprès de notre communauté de testeurs.
+          </p>
           <p className="text-kisiir-text-mid text-lg mb-8 leading-relaxed">
             Chaque score, chaque recommandation vient de personnes qui partagent votre famille capillaire. Zéro pub, zéro algorithme marketing.
           </p>

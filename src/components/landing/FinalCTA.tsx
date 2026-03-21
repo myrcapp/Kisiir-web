@@ -39,7 +39,7 @@ const FinalCTA = () => (
           <span className="font-playfair">vraiment</span> ?
         </h2>
         <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Rejoignez les 160+ testeuses qui ont déjà adopté Kisiir. Gratuit, sans engagement.
+          Rejoignez les 175+ testeurs qui ont déjà adopté Kisiir. Gratuit, sans engagement.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -58,7 +58,7 @@ const FinalCTA = () => (
             className="inline-flex items-center gap-2.5 bg-white/10 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-[60px] hover:-translate-y-[3px] hover:bg-white/20 transition-all duration-300 active:scale-[0.97]"
           >
             <AndroidIcon />
-            Android — Télécharger
+            Android — Installer la beta
           </a>
         </div>
       </motion.div>
