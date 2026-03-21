@@ -1,9 +1,13 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "rewrites": [
     { "source": "/reset-password", "destination": "/reset-password.html" },
     { "source": "/verify", "destination": "/verify.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/delete-account", "destination": "/delete-account.html" }
+    { "source": "/delete-account", "destination": "/delete-account.html" },
+    { "source": "/((?!assets|favicon|robots|logo|reset-password|verify|privacy|terms|delete-account).*)", "destination": "/index.html" }
   ]
 }
