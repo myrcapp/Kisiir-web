@@ -35,11 +35,13 @@ const Families = () => (
           Vos familles capillaires
         </p>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-kisiir-dark mb-4 tracking-tight max-w-3xl mx-auto">
-          9 familles. Une seule promesse : des réponses qui{" "}
+          9 signatures. Une seule promesse : des réponses qui{" "}
           <span className="font-playfair text-kisiir-orange">vous ressemblent.</span>
         </h2>
         <p className="text-kisiir-text-mid max-w-2xl mx-auto text-lg">
-          Kisiir ne dit pas juste « cheveux bouclés ». Notre quiz identifie votre Signature Kisiir™ parmi 9 familles uniques. Chaque score, chaque avis, chaque routine vient de personnes qui partagent exactement votre réalité capillaire.
+          Kisiir ne s'arrête pas à « cheveux bouclés ».<br />
+          Nous identifions votre identité capillaire et vous associons à l'une des 9 Signatures Kisiir™.<br />
+          Vous accédez à des avis et recommandations triés en priorité selon votre signature capillaire.
         </p>
       </motion.div>
 
@@ -82,13 +84,13 @@ const Families = () => (
         className="text-center mt-12"
       >
         <p className="text-kisiir-text-mid mb-6 max-w-lg mx-auto">
-          Quelle est votre famille ? Un quiz de 8 questions suffit pour déterminer votre Signature Kisiir™ et vous placer dans votre famille. Toute l'app s'adapte ensuite à votre réalité capillaire.
+          Quelle est votre signature capillaire ? 8 questions suffisent pour déterminer votre identité capillaire et vous associer à une Signature Kisiir™. Toute l'app s'adapte ensuite à votre réalité capillaire.
         </p>
         <a
           href="#beta"
           className="inline-flex items-center gap-1.5 border-2 border-kisiir-orange/20 text-kisiir-dark font-semibold px-6 py-3 rounded-full hover:border-kisiir-orange hover:text-kisiir-orange transition-all duration-200 active:scale-[0.97]"
         >
-          Faire le quiz — c'est gratuit →
+          Faire le quiz : c'est gratuit !
         </a>
       </motion.div>
     </div>

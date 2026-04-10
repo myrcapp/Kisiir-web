@@ -18,9 +18,9 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { emoji: "📱", target: 175, suffix: "+", label: "testeurs explorent Kisiir en beta", sub: "Rejoignez-les et partagez votre expérience" },
-  { emoji: "⭐", target: 1200, suffix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
-  { emoji: "🧴", target: 1200, suffix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
+  { emoji: "📱", target: 400, suffix: "+", label: "testeurs explorent Kisiir en beta", sub: "Rejoignez-les et partagez votre expérience" },
+  { emoji: "⭐", target: 1600, suffix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
+  { emoji: "🧴", target: 1500, suffix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
 ];
 
 const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: number; inView: boolean }) => {

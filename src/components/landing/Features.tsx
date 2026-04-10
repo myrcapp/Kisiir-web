@@ -6,7 +6,7 @@ const cards = [
   {
     emoji: "📷",
     title: "Scanner intelligent",
-    desc: "Scannez le code-barres de n'importe quel produit en magasin. En une seconde, obtenez un score de compatibilité personnalisé basé sur les avis de votre famille capillaire — pas la moyenne générale.",
+    desc: "Scannez le code-barres de n'importe quel produit en magasin. En une seconde, obtenez un score de compatibilité personnalisé basé sur les avis correspondant à votre signature capillaire.",
     span: "lg:col-span-7",
     bg: "bg-kisiir-cream",
     text: "text-kisiir-dark",
@@ -15,7 +15,7 @@ const cards = [
   {
     emoji: "🧪",
     title: "Routine Builder",
-    desc: "Notre moteur analyse plus de 1 200 avis et des centaines de combos pour construire votre routine idéale, étape par étape. Propulsé par votre communauté, pas le marketing.",
+    desc: "Notre moteur analyse plus de 1 600 avis et des centaines de combinaisons pour construire votre routine idéale, étape par étape, adaptée à votre signature capillaire.",
     span: "lg:col-span-5",
     bg: "bg-kisiir-dark",
     text: "text-white",
@@ -24,7 +24,7 @@ const cards = [
   {
     emoji: "✨",
     title: "Signature Kisiir™",
-    desc: "Votre profil capillaire unique : texture, porosité, épaisseur. Toute l'app s'adapte à vos cheveux — 9 familles, 9 réalités différentes.",
+    desc: "Un groupe capillaire défini à partir de vos caractéristiques clés. Toute l'application s'adapte à votre signature. Il en existe 9, à vous de découvrir la vôtre.",
     span: "lg:col-span-5",
     bg: "bg-kisiir-cream",
     text: "text-kisiir-dark",
@@ -33,7 +33,7 @@ const cards = [
   {
     emoji: "💬",
     title: "Combos & Avis",
-    desc: "Quels produits marchent ensemble ? Découvrez les combinaisons notées par des personnes qui partagent votre famille capillaire. Pas de pub, que du réel.",
+    desc: "Quels produits fonctionnent vraiment ensemble ? Découvrez les combos utilisées par des personnes ayant votre signature capillaire !",
     span: "lg:col-span-7",
     bg: "bg-kisiir-orange",
     text: "text-white",
@@ -88,7 +88,7 @@ const Features = () => {
             <span className="font-playfair text-kisiir-orange">Une seule app.</span>
           </h2>
           <p className="text-kisiir-text-mid max-w-2xl mx-auto text-lg">
-            Kisiir combine data communautaire et personnalisation pour vous guider vers les bons produits — pas ceux que le marketing vous pousse.
+            Kisiir combine la data et la science pour vous guider vers les bons produits, sans influence marketing.
           </p>
         </motion.div>
 

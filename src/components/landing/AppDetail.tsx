@@ -5,17 +5,17 @@ import screenProfile from "@/assets/screen-profile.png";
 import screenCompat from "@/assets/screen-compatibility.png";
 
 const features = [
-  { title: "Score de compatibilité", desc: "affinité famille + texture, basé sur votre communauté" },
-  { title: "Niveaux de confiance", desc: "on vous dit quand le score est fiable" },
-  { title: "Salle de bain virtuelle", desc: "produits en cours, favoris et archivés" },
-  { title: "Système Kombs", desc: "contribuez, montez en niveau, devenez Légende" },
-  { title: "1 200+ produits", desc: "catalogue vérifié, enrichi par la communauté" },
+  { title: "Score de compatibilité", desc: "évalué selon votre signature capillaire" },
+  { title: "Niveau de confiance", desc: "plus il y a d'avis, plus le score est fiable" },
+  { title: "Salle de bain virtuelle", desc: "tous vos produits, au même endroit" },
+  { title: "Système Kombs", desc: "contribuez et gagnez en reconnaissance" },
+  { title: "1200+ produits", desc: "une base fiable, enrichie en continu" },
 ];
 
 const compatFeatures = [
-  { title: "Score personnalisé", desc: "chaque produit noté selon votre famille capillaire" },
-  { title: "Historique complet", desc: "retrouvez tous vos scans, vos avis et suivez l'évolution de votre routine" },
-  { title: "Avis filtrés", desc: "uniquement les retours de votre famille" },
+  { title: "Score personnalisé", desc: "chaque produit est évalué selon votre signature capillaire" },
+  { title: "Questions & réponses", desc: "posez vos questions à des personnes ayant déjà utilisé le produit" },
+  { title: "Avis filtrés", desc: "consultez en priorité des retours de profils qui vous ressemblent" },
 ];
 
 const CheckIcon = () => (
@@ -71,7 +71,7 @@ const AppDetail = () => {
             <span className="font-playfair text-kisiir-orange">curly</span>
           </h2>
           <p className="text-kisiir-text-mid text-lg mb-3 leading-relaxed">
-            Scores basés sur plus de 1 200 avis réels — collectés auprès de notre communauté de testeurs.
+            Scores basés sur plus de 1 600 avis réels — collectés auprès de notre communauté de testeurs.
           </p>
           <p className="text-kisiir-text-mid text-lg mb-8 leading-relaxed">
             Chaque score, chaque recommandation vient de personnes qui partagent votre famille capillaire. Zéro pub, zéro algorithme marketing.
@@ -89,7 +89,7 @@ const AppDetail = () => {
                 <CheckIcon />
                 <div>
                   <span className="font-bold text-kisiir-dark">{f.title}</span>
-                  <span className="text-kisiir-text-mid"> — {f.desc}</span>
+                  <span className="text-kisiir-text-mid"> : {f.desc}</span>
                 </div>
               </motion.li>
             ))}
@@ -113,7 +113,7 @@ const AppDetail = () => {
             ressemble
           </h2>
           <p className="text-kisiir-text-mid text-lg mb-8 leading-relaxed">
-            Scannez n'importe quel produit et obtenez un pourcentage de compatibilité calculé à partir des retours de votre famille capillaire — pas la moyenne générale.
+            Scannez n'importe quel produit et obtenez un pourcentage de compatibilité calculé à partir d'avis de profils ayant votre signature capillaire, pas une moyenne générale.
           </p>
           <ul className="space-y-4">
             {compatFeatures.map((f, i) => (

@@ -19,8 +19,8 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { target: 1200, suffix: "+", label: "Avis collectés" },
-  { target: 1200, suffix: "+", label: "Produits référencés" },
+  { target: 1600, suffix: "+", label: "Avis collectés" },
+  { target: 1500, suffix: "+", label: "Produits référencés" },
   { target: 9, suffix: "", label: "Familles capillaires" },
 ];
 

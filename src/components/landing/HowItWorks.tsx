@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "1",
-    title: "Créez votre Signature",
-    desc: "8 questions rapides sur vos cheveux. On détermine votre Signature Kisiir™ et on vous place dans votre famille parmi les 9.",
+    title: "Découvrez votre signature capillaire",
+    desc: "8 questions rapides sur vos cheveux pour déterminer votre signature Kisiir™ et comprendre votre identité capillaire.",
   },
   {
     num: "2",
-    title: "Scannez & comparez",
-    desc: "En magasin ou chez vous, scannez un produit. Kisiir affiche la compatibilité avec VOS cheveux — pas la moyenne.",
+    title: "Scannez un produit",
+    desc: "En magasin ou chez vous, scannez un produit et découvrez sa compatibilité, ainsi que les avis de personnes ayant votre signature capillaire.",
   },
   {
     num: "3",
-    title: "Construisez votre routine",
-    desc: "Le Builder analyse les combos de votre famille pour vous proposer une routine optimisée et personnalisée.",
+    title: "Décidez en toute confiance",
+    desc: "Comparez les scores de compatibilité et choisissez des produits adaptés à votre signature capillaire, pour ne plus acheter au hasard.",
   },
 ];
 

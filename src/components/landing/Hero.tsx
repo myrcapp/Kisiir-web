@@ -4,7 +4,7 @@ import screenScan from "@/assets/screen-scan.png";
 import screenCompat from "@/assets/screen-compatibility.png";
 import SplinePlaceholder from "./SplinePlaceholder";
 
-const signatures = ["Signature Kisiir™", "Ondas", "Nami", "Yaba", "Rizo", "Silmus", "Kurlu", "Spiro", "Coilya", "Zarha"];
+const signatures = ["Ondas", "Nami", "Yaba", "Rizo", "Silmus", "Kurlu", "Spiro", "Coilya", "Zarha"];
 
 const AppleIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -54,8 +54,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-kisiir-text-mid leading-relaxed mb-8 max-w-xl">
-              Kisiir analyse la compatibilité de chaque produit avec votre{" "}
-              <span className="relative inline-block w-[160px] h-[1.5em] align-bottom overflow-hidden">
+              Kisiir analyse la compatibilité de chaque produit avec votre signature capillaire —{" "}
+              <span className="relative inline-block w-[80px] h-[1.5em] align-bottom overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={familyIndex}
@@ -95,8 +95,8 @@ const Hero = () => {
             {/* Metrics */}
             <div className="flex flex-wrap gap-6 sm:gap-8 border-t border-kisiir-orange/[0.08] pt-6">
               {[
-                { num: "1 200", suffix: "+", label: "Avis collectés" },
-                { num: "1 200", suffix: "+", label: "Produits référencés" },
+                { num: "1 600", suffix: "+", label: "Avis collectés" },
+                { num: "1 500", suffix: "+", label: "Produits référencés" },
                 { num: "9", suffix: "", label: "Familles capillaires" },
               ].map((s, i) => (
                 <div key={i}>
