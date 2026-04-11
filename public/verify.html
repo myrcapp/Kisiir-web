@@ -61,8 +61,17 @@
   </style>
 </head>
 <body>
+  <!-- CONFIRM STATE (shown by default, requires user click) -->
+  <div class="card" id="confirmCard">
+    <div class="logo">Kisiir</div>
+    <div class="icon">&#9993;</div>
+    <h1>Confirme ton email</h1>
+    <p class="text">Clique sur le bouton ci-dessous pour valider ton adresse email et accéder à Kisiir.</p>
+    <button class="btn" onclick="verify()">Confirmer mon email</button>
+  </div>
+
   <!-- LOADING STATE -->
-  <div class="card" id="loadingCard">
+  <div class="card hidden" id="loadingCard">
     <div class="logo">Kisiir</div>
     <div class="icon">&#9993;</div>
     <h1>Vérification en cours...</h1>
@@ -96,13 +105,14 @@
     const secret = params.get('secret');
 
     if (!userId || !secret) {
-      document.getElementById('loadingCard').classList.add('hidden');
+      document.getElementById('confirmCard').classList.add('hidden');
       document.getElementById('errorCard').classList.remove('hidden');
-    } else {
-      verify();
     }
 
     async function verify() {
+      document.getElementById('confirmCard').classList.add('hidden');
+      document.getElementById('loadingCard').classList.remove('hidden');
+
       try {
         const res = await fetch(APPWRITE_ENDPOINT + '/account/verification', {
           method: 'PUT',
