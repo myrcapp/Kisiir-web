@@ -15,7 +15,7 @@ const cards = [
   {
     emoji: "🧪",
     title: "Routine Builder",
-    desc: "Notre moteur analyse plus de 1 600 avis et des centaines de combinaisons pour construire votre routine idéale, étape par étape, adaptée à votre signature capillaire.",
+    desc: "Notre moteur analyse plus de 5 500 avis et des centaines de combinaisons pour construire votre routine idéale, étape par étape, adaptée à votre signature capillaire.",
     span: "lg:col-span-5",
     bg: "bg-kisiir-dark",
     text: "text-white",

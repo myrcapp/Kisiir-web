@@ -83,10 +83,10 @@ const Navbar = () => {
           </div>
 
           <a
-            href="#beta"
+            href="#telecharger"
             className="hidden lg:inline-flex items-center gap-2 bg-kisiir-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-kisiir-dark/90 transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.97]"
           >
-            Rejoindre la beta
+            Télécharger l'app
           </a>
 
           {/* Mobile burger */}
@@ -119,11 +119,11 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#beta"
+              href="#telecharger"
               onClick={() => setMobileOpen(false)}
               className="inline-flex items-center justify-center gap-2 bg-kisiir-dark text-white font-semibold px-5 py-3 rounded-full mt-2"
             >
-              Rejoindre la beta
+              Télécharger l'app
             </a>
           </div>
         </div>

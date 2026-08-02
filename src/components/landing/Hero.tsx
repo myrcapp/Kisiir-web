@@ -12,6 +12,12 @@ const AppleIcon = () => (
   </svg>
 );
 
+const AndroidIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.523 15.341a1 1 0 01-.997-.998 1 1 0 01.997-.998 1 1 0 01.998.998 1 1 0 01-.998.998m-11.046 0a1 1 0 01-.998-.998 1 1 0 01.998-.998 1 1 0 01.997.998 1 1 0 01-.997.998m11.405-6.02l1.997-3.46a.416.416 0 00-.152-.567.416.416 0 00-.568.152L17.12 8.95c-1.46-.667-3.1-1.04-4.87-1.04-1.77 0-3.41.373-4.87 1.04L5.34 5.446a.416.416 0 00-.568-.152.416.416 0 00-.152.567l1.997 3.46C2.688 11.186.343 14.957 0 19.2h24c-.344-4.243-2.688-8.014-6.618-9.879"/>
+  </svg>
+);
+
 const Hero = () => {
   const [familyIndex, setFamilyIndex] = useState(0);
   const { scrollY } = useScroll();
@@ -45,7 +51,7 @@ const Hero = () => {
                 <span className="animate-pulse-dot absolute inline-flex h-full w-full rounded-full bg-kisiir-teal opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-kisiir-teal" />
               </span>
-              <span className="text-sm font-medium text-kisiir-teal">Beta ouverte — Gratuite sur iOS & Android</span>
+              <span className="text-sm font-medium text-kisiir-teal">Disponible gratuitement sur iOS &amp; Android</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.08] text-kisiir-dark mb-6 tracking-tight">
@@ -75,13 +81,22 @@ const Hero = () => {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 mb-10">
               <a
-                href="https://testflight.apple.com/join/7DnZhFUm"
+                href="https://apps.apple.com/app/kisiir/id6759988563"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-shine inline-flex items-center gap-2.5 bg-kisiir-orange text-white font-bold px-7 py-4 rounded-[60px] shadow-[0_8px_30px_rgba(232,83,14,0.3)] hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(232,83,14,0.4)] transition-all duration-300 active:scale-[0.97]"
               >
                 <AppleIcon />
-                Rejoindre la beta
+                Télécharger sur l'App Store
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.kisiir.rcapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 border-2 border-kisiir-dark/15 text-kisiir-dark font-bold px-7 py-4 rounded-[60px] hover:-translate-y-[3px] hover:border-kisiir-orange hover:text-kisiir-orange transition-all duration-300 active:scale-[0.97]"
+              >
+                <AndroidIcon />
+                Google Play
               </a>
               <a
                 href="#features"
@@ -95,8 +110,8 @@ const Hero = () => {
             {/* Metrics */}
             <div className="flex flex-wrap gap-6 sm:gap-8 border-t border-kisiir-orange/[0.08] pt-6">
               {[
-                { num: "1 600", suffix: "+", label: "Avis collectés" },
-                { num: "1 500", suffix: "+", label: "Produits référencés" },
+                { num: "5 500", suffix: "+", label: "Avis collectés" },
+                { num: "6 000", suffix: "+", label: "Produits référencés" },
                 { num: "9", suffix: "", label: "Familles capillaires" },
               ].map((s, i) => (
                 <div key={i}>
@@ -126,7 +141,7 @@ const Hero = () => {
                 alt="Kisiir Scanner"
                 className="w-[240px] sm:w-[280px] rounded-[32px] shadow-[0_30px_80px_rgba(15,9,6,0.18)] relative z-20"
                 initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 whileHover={{ y: -12, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } }}
               />
@@ -137,7 +152,7 @@ const Hero = () => {
                 alt="Kisiir Compatibilité"
                 className="w-[200px] sm:w-[240px] rounded-[32px] shadow-[0_30px_80px_rgba(15,9,6,0.14)] rotate-[5deg]"
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 whileHover={{ y: -12, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } }}
               />

@@ -14,7 +14,7 @@ const AndroidIcon = () => (
 
 const FinalCTA = () => (
   <section
-    id="beta"
+    id="telecharger"
     className="relative py-24 lg:py-32 overflow-hidden"
     style={{ background: "linear-gradient(135deg, #E8530E, #D4440A)" }}
   >
@@ -39,26 +39,26 @@ const FinalCTA = () => (
           <span className="font-playfair">vraiment</span> ?
         </h2>
         <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Rejoignez les 400+ testeurs qui ont déjà adopté Kisiir. Gratuit, sans engagement.
+          Rejoignez les 10 000+ utilisatrices qui ont déjà adopté Kisiir. Gratuit, sans engagement.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://testflight.apple.com/join/7DnZhFUm"
+            href="https://apps.apple.com/app/kisiir/id6759988563"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-white text-kisiir-dark font-bold px-8 py-4 rounded-[60px] shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] transition-all duration-300 active:scale-[0.97]"
           >
             <AppleIcon />
-            iPhone — TestFlight
+            Télécharger sur l'App Store
           </a>
           <a
-            href="https://expo.dev/accounts/rcbhg/projects/kisiir_rc/builds/364a5aa5-f40c-4504-aa46-4b8a895d8a78"
+            href="https://play.google.com/store/apps/details?id=com.kisiir.rcapp"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-white/10 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-[60px] hover:-translate-y-[3px] hover:bg-white/20 transition-all duration-300 active:scale-[0.97]"
           >
             <AndroidIcon />
-            Android — Installer la beta
+            Télécharger sur Google Play
           </a>
         </div>
       </motion.div>

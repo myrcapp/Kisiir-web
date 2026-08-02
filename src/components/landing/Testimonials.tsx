@@ -18,9 +18,9 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { emoji: "📱", target: 400, suffix: "+", label: "testeurs explorent Kisiir en beta", sub: "Rejoignez-les et partagez votre expérience" },
-  { emoji: "⭐", target: 1600, suffix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
-  { emoji: "🧴", target: 1500, suffix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
+  { emoji: "📱", target: 10000, suffix: "+", label: "utilisatrices sur Kisiir", sub: "Rejoignez-les et partagez votre expérience" },
+  { emoji: "⭐", target: 5500, suffix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
+  { emoji: "🧴", target: 6000, suffix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
 ];
 
 const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: number; inView: boolean }) => {
@@ -80,10 +80,10 @@ const Testimonials = () => {
           className="text-center mt-10"
         >
           <a
-            href="#beta"
+            href="#telecharger"
             className="inline-flex items-center gap-1.5 border-2 border-kisiir-orange/20 text-kisiir-dark font-semibold px-6 py-3 rounded-full hover:border-kisiir-orange hover:text-kisiir-orange transition-all duration-200 active:scale-[0.97]"
           >
-            Rejoindre la beta →
+            Télécharger l'app →
           </a>
         </motion.div>
       </div>

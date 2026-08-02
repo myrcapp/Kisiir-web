@@ -87,7 +87,7 @@ const Families = () => (
           Quelle est votre signature capillaire ? 8 questions suffisent pour déterminer votre identité capillaire et vous associer à une Signature Kisiir™. Toute l'app s'adapte ensuite à votre réalité capillaire.
         </p>
         <a
-          href="#beta"
+          href="#telecharger"
           className="inline-flex items-center gap-1.5 border-2 border-kisiir-orange/20 text-kisiir-dark font-semibold px-6 py-3 rounded-full hover:border-kisiir-orange hover:text-kisiir-orange transition-all duration-200 active:scale-[0.97]"
         >
           Faire le quiz : c'est gratuit !
