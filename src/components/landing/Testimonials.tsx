@@ -18,9 +18,9 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { emoji: "📱", target: 10000, suffix: "+", label: "utilisatrices sur Kisiir", sub: "Rejoignez-les et partagez votre expérience" },
-  { emoji: "⭐", target: 5500, suffix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
-  { emoji: "🧴", target: 6000, suffix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
+  { emoji: "📱", target: 10000, prefix: "+", label: "utilisatrices sur Kisiir", sub: "Rejoignez-les et partagez votre expérience" },
+  { emoji: "⭐", target: 6000, prefix: "+", label: "avis produits collectés", sub: "Chaque avis enrichit les scores de votre famille" },
+  { emoji: "🧴", target: 6000, prefix: "+", label: "produits référencés", sub: "Un catalogue qui grandit chaque jour grâce à la communauté" },
 ];
 
 const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: number; inView: boolean }) => {
@@ -37,7 +37,7 @@ const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: numbe
         {stat.emoji}
       </div>
       <p className="text-4xl sm:text-5xl font-extrabold text-kisiir-orange mb-2">
-        {stat.target >= 1000 ? count.toLocaleString("fr-FR") : count}{stat.suffix}
+        {stat.prefix}{stat.target >= 1000 ? count.toLocaleString("fr-FR") : count}
       </p>
       <p className="text-kisiir-dark font-semibold mb-1">{stat.label}</p>
       <p className="text-sm text-kisiir-text-light">{stat.sub}</p>

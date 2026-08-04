@@ -19,9 +19,9 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
 }
 
 const stats = [
-  { target: 5500, suffix: "+", label: "Avis collectés" },
-  { target: 6000, suffix: "+", label: "Produits référencés" },
-  { target: 9, suffix: "", label: "Familles capillaires" },
+  { target: 6000, prefix: "+", label: "Avis collectés" },
+  { target: 6000, prefix: "+", label: "Produits référencés" },
+  { target: 9, prefix: "", label: "Familles capillaires" },
 ];
 
 const valueCards = [
@@ -49,7 +49,7 @@ const StatCard = ({ stat, index, inView }: { stat: typeof stats[0]; index: numbe
       className="bg-white/[0.04] rounded-[20px] p-6 text-center"
     >
       <p className="text-3xl sm:text-4xl font-extrabold text-kisiir-orange">
-        {stat.target >= 1000 ? count.toLocaleString("fr-FR") : count}{stat.suffix}
+        {stat.prefix}{stat.target >= 1000 ? count.toLocaleString("fr-FR") : count}
       </p>
       <p className="text-white/40 text-sm mt-1">{stat.label}</p>
     </motion.div>

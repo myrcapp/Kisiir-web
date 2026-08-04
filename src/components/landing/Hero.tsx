@@ -110,13 +110,13 @@ const Hero = () => {
             {/* Metrics */}
             <div className="flex flex-wrap gap-6 sm:gap-8 border-t border-kisiir-orange/[0.08] pt-6">
               {[
-                { num: "5 500", suffix: "+", label: "Avis collectés" },
-                { num: "6 000", suffix: "+", label: "Produits référencés" },
-                { num: "9", suffix: "", label: "Familles capillaires" },
+                { num: "6 000", prefix: "+", label: "Avis collectés" },
+                { num: "6 000", prefix: "+", label: "Produits référencés" },
+                { num: "9", prefix: "", label: "Familles capillaires" },
               ].map((s, i) => (
                 <div key={i}>
                   <p className="text-2xl font-extrabold text-kisiir-dark">
-                    {s.num}<span className="text-kisiir-orange">{s.suffix}</span>
+                    <span className="text-kisiir-orange">{s.prefix}</span>{s.num}
                   </p>
                   <p className="text-sm text-kisiir-text-light">{s.label}</p>
                 </div>

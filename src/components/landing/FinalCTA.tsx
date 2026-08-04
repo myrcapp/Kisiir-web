@@ -39,7 +39,7 @@ const FinalCTA = () => (
           <span className="font-playfair">vraiment</span> ?
         </h2>
         <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-          Rejoignez les 10 000+ utilisatrices qui ont déjà adopté Kisiir. Gratuit, sans engagement.
+          Rejoignez les +10 000 utilisatrices qui ont déjà adopté Kisiir. Gratuit, sans engagement.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

@@ -71,7 +71,7 @@ const AppDetail = () => {
             <span className="font-playfair text-kisiir-orange">curly</span>
           </h2>
           <p className="text-kisiir-text-mid text-lg mb-3 leading-relaxed">
-            Scores basés sur plus de 5 500 avis réels, collectés auprès de notre communauté.
+            Scores basés sur plus de 6 000 avis réels, collectés auprès de notre communauté.
           </p>
           <p className="text-kisiir-text-mid text-lg mb-8 leading-relaxed">
             Chaque score, chaque recommandation vient de personnes qui partagent votre famille capillaire. Zéro pub, zéro algorithme marketing.
